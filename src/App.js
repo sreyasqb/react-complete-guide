@@ -36,8 +36,8 @@ function App() {
     console.log(expenseData);
     
     setExpenses( (prevExpenses)=>{
-      console.log([...prevExpenses,expenseData]);
-      return [...prevExpenses,expenseData];
+      console.log([expenseData,...prevExpenses]);
+      return [expenseData,...prevExpenses];
     }
       
     );

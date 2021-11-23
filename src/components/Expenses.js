@@ -12,6 +12,7 @@ function Expenses(props) {
   return (
     <Card className="expenses">
       <ExpensesFilter selected={filterYear} onSave={dateHandler} />
+      {console.log(props.items)};
       {props.items.map((item) => 
         <ExpenseItem title={item.title} date={item.date} amount={item.amount} />
       )}
